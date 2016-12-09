@@ -1,0 +1,249 @@
+﻿against:de encontro
+among:entre
+away:afastado
+being:sendo
+better:melhor
+came:veio
+come:vindo
+could:poder, ser capaz de
+even:mesmo
+ever:sempre
+eyes:olhos
+face:cara
+far:distante
+few:alguns, algumas
+gave:deu
+give:cessão, dar, oferecer
+got:começado, obtive
+had:tinha
+hand:mão
+hands:mãos
+heard:ouvidos
+him:pronome oblíquo, ele, o
+himself:ele mesmo
+his:dela
+however:entretanto
+just:apenas
+less:menos
+let:deixam
+made:feito, criado, fabricado
+make:fazer
+may:poder
+might:dever
+must:obrigação, dever
+once:uma vez
+own:possuir, próprio
+perhaps:talvez
+same:mesmos
+saw:visto
+seemed:pareceu
+shall:devem
+since:desde, desde que
+so:então, tão, tanto, também
+some:algum, alguma, alguns,algumas
+son:filho
+still:ainda
+such:tão
+tell:dizer
+than:do que (comparações)
+themselves:eles mesmos
+things:coisas
+think:pensa
+though:embora
+thought:pensamento
+through:através
+thus:assim
+took:fez exame
+war:guerra
+way:percurso, sentido, maneira, modo
+went:foram
+whole:inteiro
+would:futuro condicional
+yet:ainda
+about:sobre, a ponto de, aproximadamente
+after:depois, em seguida
+age:idade
+all:tudo
+also:também
+always:sempre
+am:sou
+an:um, uma
+and:e
+another:outros
+any:algum, alguma
+are:são, estão
+as:como, assim como
+back:voltar
+be:ser, estar
+because:porque, por causa
+been:particípio passado to be
+before:antes
+between:entre
+body:corpo
+both:ambos
+by:próximo a, ao lado, perto de, através, por
+called:chamada
+can:poder, ser capaz de
+case:caso
+city:cidade
+country:pais
+day:dia
+days:dias
+don't:não
+end:fim, final, extremidade
+find:procurar, achado
+first:primeiro
+five:cinco
+found:encontrado
+four:quatro
+from:de
+get:pegar
+go:ir
+god:deus
+going:indo
+good:bom
+have:ter, possuir
+having:tinha
+head:cabeça
+heart:coração
+here:aqui
+house:casa
+how:como
+hundred:cem
+if:se
+in:em, no, na, nos, nas
+is:é, está
+it:ele, ela (objetos e animais)
+its:seu (p/ animais e objetos)
+king:rei
+know:saber
+left:esquerdo, esquerda
+life:vida
+light:luz
+like:gostar, semelhante, parecido
+little:pouco
+long:longo
+look:olhar
+love:amor
+man:homem
+many:muitos
+me:a mim
+men:homens
+mind:mente
+more:mais
+most:mais (superlativo)
+mr:Sr.
+much:muito
+my:meu, minha
+name:nome
+nature:natureza
+never:nunca
+new:novo
+night:noite
+no:não, nenhum, nenhuma
+not:negativa, não
+nothing:nada
+now:agora
+of:o, a, os, as
+off:desligado
+old:velho
+one:um, uma
+only:apenas, único, somente
+or:ou
+other:outro, outra
+others:outros
+our:nosso
+out:fora
+part:parte
+people:povos
+place:lugar
+power:potencia, poder
+public:público
+right:direita, direito
+roman:romano
+said:dito 
+say:palavra
+see:ver
+she:ela
+side:lado
+soon:breve
+state:estado
+take:tomada
+that:aquele, aquela, que
+the:o, a, os, as
+their:deles, delas
+them:a eles, a elas
+then:então, em seguida, após
+there:há
+these:estes, estas
+they:eles, elas
+this:este, esta
+those:aqueles
+three:tres
+time:tempo, momento
+to:para
+twenty:vinte
+two:dois, duas
+up:para cima
+upon:sobre
+us:nós
+very:muito
+was:passado do verbo to be, era, estava
+water:água
+we:nós
+well:bem
+were:passado do verbo to be, era, estava
+what:o que, quais
+when:quando
+where:onde
+which:qual, de qual
+while:quando
+who:quem
+whom:quem
+whose:de quem
+will:futuro
+with:com
+without:sem
+woman:mulher
+words:palavras
+work:trabalho
+world:mundo
+years:anos
+you:você
+young:jovens
+your:seu, seus
+again:outra vez
+almost:quase
+arm:braços
+asked:pedida
+at:no, na, em, ás
+but:mas, porém, exceto
+death:morte
+did:fazer
+do:fazer, verbo auxiliar
+down:para baixo
+each:cada um
+every:cada
+father:pai
+footnote:notas de rodapé
+for:para, por
+general:geral
+great:grande, maravilhoso
+has:tem
+he:ele
+her:dela
+into:em direção de
+last:último
+looked:olhada
+non:não
+nor:nem
+on:sobre, em cima, em direção a
+over:acima, encerrado
+put:posto
+seen:visto
+should:dever, verbo auxiliar
+thousand:mil
+too:demasiado
+under:sob
+until:até
+why:porque

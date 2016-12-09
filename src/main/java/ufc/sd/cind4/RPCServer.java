@@ -1,18 +1,20 @@
 package ufc.sd.cind4;
 
-import com.rabbitmq.client.ConnectionFactory;
-import com.rabbitmq.client.Connection;
-import com.rabbitmq.client.Channel;
-import com.rabbitmq.client.QueueingConsumer;
+import java.io.IOException;
+import java.util.Map;
+
 import com.rabbitmq.client.AMQP.BasicProperties;
+import com.rabbitmq.client.Channel;
+import com.rabbitmq.client.Connection;
+import com.rabbitmq.client.ConnectionFactory;
+import com.rabbitmq.client.QueueingConsumer;
 
 import ufc.sd.cind.config.Config;
+import ufc.sd.cind.util.ManipuladorArquivos;
   
 public class RPCServer {
   
   private static final String RPC_QUEUE_NAME = "rpc_queue";
-  
-  private Muda md = new Muda("Calada");
   
 //  private static int fib(int n) {
 //    if (n ==0) return 0;
@@ -20,14 +22,12 @@ public class RPCServer {
 //    return fib(n-1) + fib(n-2);
 //  }
   
-  private static String fib(String n) {
-	    return "["+n.toUpperCase()+"]";
+  private static String fib(String n) throws IOException {
+	ManipuladorArquivos mq = new ManipuladorArquivos();
+	Map<String, String> dic = mq.carregar();
+	return dic.get("men");
   }
-  
-  private String muda(Muda m){
-	  return m.getNome();
-  }
-    
+     
   public static void main(String[] argv) {
     Connection connection = null;
     Channel channel = null;
@@ -62,7 +62,7 @@ public class RPCServer {
           String message = new String(delivery.getBody(),"UTF-8");
 //          int n = Integer.parseInt(message);
           
-          System.out.println(" [.] fib(" + message + ")");
+          System.out.println(" [.] Traducao [" + message + "]");
 //          response = "" + fib(n);
           response = "" + fib(message);
         }
