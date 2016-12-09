@@ -1,4 +1,4 @@
-package ufc.sd.cind;
+package ufc.sd.cind4;
 
 public class Muda {
 

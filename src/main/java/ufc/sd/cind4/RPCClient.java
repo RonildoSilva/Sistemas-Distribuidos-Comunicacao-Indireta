@@ -1,11 +1,15 @@
-package ufc.sd.cind;
+package ufc.sd.cind4;
 
-import com.rabbitmq.client.ConnectionFactory;
-import com.rabbitmq.client.Connection;
-import com.rabbitmq.client.Channel;
-import com.rabbitmq.client.QueueingConsumer;
-import com.rabbitmq.client.AMQP.BasicProperties;
 import java.util.UUID;
+
+import com.rabbitmq.client.AMQP.BasicProperties;
+
+import ufc.sd.cind.config.Config;
+
+import com.rabbitmq.client.Channel;
+import com.rabbitmq.client.Connection;
+import com.rabbitmq.client.ConnectionFactory;
+import com.rabbitmq.client.QueueingConsumer;
 
 public class RPCClient {
 
@@ -17,7 +21,7 @@ public class RPCClient {
 
   public RPCClient() throws Exception {
     ConnectionFactory factory = new ConnectionFactory();
-    factory.setHost("localhost");
+    factory.setHost(Config.IP);
     connection = factory.newConnection();
     channel = connection.createChannel();
 

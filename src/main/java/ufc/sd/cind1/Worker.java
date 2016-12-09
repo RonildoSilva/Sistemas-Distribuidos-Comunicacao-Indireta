@@ -1,6 +1,8 @@
-package ufc.sd.cind;
+package ufc.sd.cind1;
 
 import com.rabbitmq.client.*;
+
+import ufc.sd.cind.config.Config;
 
 import java.io.IOException;
 
@@ -9,7 +11,7 @@ public class Worker {
 
   public static void main(String[] argv) throws Exception {
     ConnectionFactory factory = new ConnectionFactory();
-    factory.setHost("localhost");
+    factory.setHost(Config.IP);
     final Connection connection = factory.newConnection();
     final Channel channel = connection.createChannel();
 

@@ -1,10 +1,12 @@
-package ufc.sd.cind;
+package ufc.sd.cind4;
 
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.QueueingConsumer;
 import com.rabbitmq.client.AMQP.BasicProperties;
+
+import ufc.sd.cind.config.Config;
   
 public class RPCServer {
   
@@ -12,10 +14,14 @@ public class RPCServer {
   
   private Muda md = new Muda("Calada");
   
-  private static int fib(int n) {
-    if (n ==0) return 0;
-    if (n == 1) return 1;
-    return fib(n-1) + fib(n-2);
+//  private static int fib(int n) {
+//    if (n ==0) return 0;
+//    if (n == 1) return 1;
+//    return fib(n-1) + fib(n-2);
+//  }
+  
+  private static String fib(String n) {
+	    return "["+n.toUpperCase()+"]";
   }
   
   private String muda(Muda m){
@@ -27,7 +33,7 @@ public class RPCServer {
     Channel channel = null;
     try {
       ConnectionFactory factory = new ConnectionFactory();
-      factory.setHost("localhost");
+      factory.setHost(Config.IP);
   
       connection = factory.newConnection();
       channel = connection.createChannel();
@@ -54,10 +60,11 @@ public class RPCServer {
         
         try {
           String message = new String(delivery.getBody(),"UTF-8");
-          int n = Integer.parseInt(message);
-  
+//          int n = Integer.parseInt(message);
+          
           System.out.println(" [.] fib(" + message + ")");
-          response = "" + fib(n);
+//          response = "" + fib(n);
+          response = "" + fib(message);
         }
         catch (Exception e){
           System.out.println(" [.] " + e.toString());
