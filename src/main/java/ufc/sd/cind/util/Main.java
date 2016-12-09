@@ -10,7 +10,7 @@ public class Main {
 		ManipuladorArquivos mq = new ManipuladorArquivos();
 		Map<String, String> dic = mq.carregar();
 		//System.out.println(dic.toString());
-		System.out.println(dic.get("men"));
+		System.out.println(dic.get("piano"));
 		
 	}
 

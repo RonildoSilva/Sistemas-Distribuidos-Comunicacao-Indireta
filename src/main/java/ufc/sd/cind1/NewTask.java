@@ -28,7 +28,7 @@ public class NewTask {
     channel.basicPublish( "", TASK_QUEUE_NAME,
             MessageProperties.PERSISTENT_TEXT_PLAIN,
             message.getBytes());
-    System.out.println(" [x] Sent '" + message + "'");
+    System.out.println(" [x] Enviado '" + message + "'");
 
     channel.close();
     connection.close();
@@ -36,7 +36,7 @@ public class NewTask {
   
   private static String getMessage(String[] strings){
 	    if (strings.length < 1)
-	        return "Hello World!";
+	        return "[...]";
 	    return joinStrings(strings, " ");
 	}
   
