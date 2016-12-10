@@ -23,8 +23,9 @@ public class NewTask {
 
     channel.queueDeclare(TASK_QUEUE_NAME, true, false, false, null);
 
-    String message = getMessage(argv);
-
+    String [] argumentos = {"1", "ronildo", "4"};
+    String message = getMessage(argumentos);
+    
     channel.basicPublish( "", TASK_QUEUE_NAME,
             MessageProperties.PERSISTENT_TEXT_PLAIN,
             message.getBytes());

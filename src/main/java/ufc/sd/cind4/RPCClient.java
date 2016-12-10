@@ -1,5 +1,6 @@
 package ufc.sd.cind4;
 
+import java.util.Scanner;
 import java.util.UUID;
 
 import com.rabbitmq.client.AMQP.BasicProperties;
@@ -63,9 +64,11 @@ public class RPCClient {
     try {
       fibonacciRpc = new RPCClient();
 
-      System.out.println(" [x] Requesting fib(30)");
-      response = fibonacciRpc.call("30");
-      System.out.println(" [.] Got '" + response + "'");
+      System.out.println("Digite um nome em ingles.");
+      Scanner scanner = new Scanner(System.in);
+      
+      response = fibonacciRpc.call(scanner.nextLine());
+      System.out.println(" [.] Em português: '" + response + "'");
     }
     catch  (Exception e) {
       e.printStackTrace();

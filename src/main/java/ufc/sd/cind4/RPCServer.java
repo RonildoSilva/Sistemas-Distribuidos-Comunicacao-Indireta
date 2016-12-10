@@ -15,17 +15,13 @@ import ufc.sd.cind.util.ManipuladorArquivos;
 public class RPCServer {
   
   private static final String RPC_QUEUE_NAME = "rpc_queue";
-  
-//  private static int fib(int n) {
-//    if (n ==0) return 0;
-//    if (n == 1) return 1;
-//    return fib(n-1) + fib(n-2);
-//  }
-  
-  private static String fib(String n) throws IOException {
+    
+  private static String traduz(String n) throws IOException {
 	ManipuladorArquivos mq = new ManipuladorArquivos();
 	Map<String, String> dic = mq.carregar();
-	return dic.get("men");
+	
+	System.out.println(dic.get(n));
+	return dic.get(n);
   }
      
   public static void main(String[] argv) {
@@ -60,11 +56,9 @@ public class RPCServer {
         
         try {
           String message = new String(delivery.getBody(),"UTF-8");
-//          int n = Integer.parseInt(message);
           
           System.out.println(" [.] Traducao [" + message + "]");
-//          response = "" + fib(n);
-          response = "" + fib(message);
+          response = "" + traduz(message);
         }
         catch (Exception e){
           System.out.println(" [.] " + e.toString());
